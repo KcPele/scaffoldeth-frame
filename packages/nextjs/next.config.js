@@ -3,6 +3,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/comics",
+        destination: "https://scaffoldeth.io",
+        permanent: false,
+      },
+      {
+        source: "/cloud",
+        destination: "https://speedrunethereum.com",
+        permanent: false,
+      },
+    ];
+  },
   typescript: {
     ignoreBuildErrors: process.env.NEXT_PUBLIC_IGNORE_BUILD_ERROR === "true",
   },

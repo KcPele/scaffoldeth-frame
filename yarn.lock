@@ -240,6 +240,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@coinbase/onchainkit@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "@coinbase/onchainkit@npm:0.6.1"
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+    viem: ^2.7.0
+  checksum: da63712635771904583d3ca34c77dfcfe95c2fafcd42d4b0b6b11ee38846144fad9053688b6e2e0c1ca4d748ab2120567a20f8dbf51b6e44fef645fb47549633
+  languageName: node
+  linkType: hard
+
 "@coinbase/wallet-sdk@npm:^3.6.6":
   version: 3.7.2
   resolution: "@coinbase/wallet-sdk@npm:3.7.2"
@@ -1858,6 +1869,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@se-2/nextjs@workspace:packages/nextjs"
   dependencies:
+    "@coinbase/onchainkit": ^0.6.1
     "@ethersproject/providers": ^5.7.2
     "@heroicons/react": ^2.0.11
     "@rainbow-me/rainbowkit": 1.3.5

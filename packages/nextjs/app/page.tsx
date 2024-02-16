@@ -1,10 +1,41 @@
 "use client";
 
 import Link from "next/link";
+import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { NextPage } from "next";
+import type { Metadata } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
+
+const frameMetadata = getFrameMetadata({
+  buttons: [
+    {
+      label: "Begin",
+    },
+  ],
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQBHarz2WFczTjz5GnhjHrbUPDnB48W5BM2v2h6HbE1rZ/1.png`,
+  postUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
+});
+export const metadata: Metadata = {
+  title: "Scaffold-ETH 2 App",
+  description: "Built with 🏗 Scaffold-ETH 2",
+  openGraph: {
+    title: "Scaffold-ETH 2 App",
+    description: "Built with 🏗 Scaffold-ETH 2",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQBHarz2WFczTjz5GnhjHrbUPDnB48W5BM2v2h6HbE1rZ/1.png`,
+        width: 800,
+        height: 600,
+        alt: "Scaffold-ETH 2 App",
+      },
+    ],
+  },
+  other: {
+    ...frameMetadata,
+  },
+};
 
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
