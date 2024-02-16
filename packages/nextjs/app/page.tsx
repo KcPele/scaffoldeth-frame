@@ -14,7 +14,7 @@ const frameMetadata = getFrameMetadata({
   postUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 export const metadata: Metadata = {
-  title: "Scaffold-ETH 2 App",
+  title: "Scaffold-ETH 2 App | Scaffold-ETH 2",
   description: "Built with 🏗 Scaffold-ETH 2",
   openGraph: {
     title: "Scaffold-ETH 2 App",
