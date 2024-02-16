@@ -1,12 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { NextPage } from "next";
 import type { Metadata } from "next";
-import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { Address } from "~~/components/scaffold-eth";
 
 const frameMetadata = getFrameMetadata({
   buttons: [
@@ -38,8 +34,6 @@ export const metadata: Metadata = {
 };
 
 const Home: NextPage = () => {
-  const { address: connectedAddress } = useAccount();
-
   return (
     <>
       <div className="flex items-center flex-col flex-grow pt-10">
@@ -50,7 +44,6 @@ const Home: NextPage = () => {
           </h1>
           <div className="flex justify-center items-center space-x-2">
             <p className="my-2 font-medium">Connected Address:</p>
-            <Address address={connectedAddress} />
           </div>
           <p className="text-center text-lg">
             Get started by editing{" "}
