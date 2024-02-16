@@ -10,7 +10,7 @@ const frameMetadata = getFrameMetadata({
       label: "Begin",
     },
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQBHarz2WFczTjz5GnhjHrbUPDnB48W5BM2v2h6HbE1rZ/1.png`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUcgZ6KUhRctbXEyDWxp3pA2S23ceenKgxm3sBgAP2qTb/1.png`,
   postUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Built with 🏗 Scaffold-ETH 2",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQBHarz2WFczTjz5GnhjHrbUPDnB48W5BM2v2h6HbE1rZ/1.png`,
+        url: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUcgZ6KUhRctbXEyDWxp3pA2S23ceenKgxm3sBgAP2qTb/1.png`,
         width: 800,
         height: 600,
         alt: "Scaffold-ETH 2 App",
